@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer
+package com.example.cameraapp.composer
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
@@ -16,19 +16,19 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.Lifecycle
-import com.example.cameraapp.camposer.extensions.clamped
-import com.example.cameraapp.camposer.extensions.onCameraTouchEvent
-import com.example.cameraapp.camposer.focus.FocusTap
-import com.example.cameraapp.camposer.focus.SquareCornerFocus
-import com.example.cameraapp.camposer.state.CamSelector
-import com.example.cameraapp.camposer.state.CameraState
-import com.example.cameraapp.camposer.state.CaptureMode
-import com.example.cameraapp.camposer.state.FlashMode
-import com.example.cameraapp.camposer.state.ImageAnalyzer
-import com.example.cameraapp.camposer.state.ImageTargetSize
-import com.example.cameraapp.camposer.state.ImplementationMode
-import com.example.cameraapp.camposer.state.ScaleType
-import com.example.cameraapp.camposer.state.rememberCameraState
+import com.example.cameraapp.composer.extensions.clamped
+import com.example.cameraapp.composer.extensions.onCameraTouchEvent
+import com.example.cameraapp.composer.focus.FocusTap
+import com.example.cameraapp.composer.focus.SquareCornerFocus
+import com.example.cameraapp.composer.state.CamSelector
+import com.example.cameraapp.composer.state.CameraState
+import com.example.cameraapp.composer.state.CaptureMode
+import com.example.cameraapp.composer.state.FlashMode
+import com.example.cameraapp.composer.state.ImageAnalyzer
+import com.example.cameraapp.composer.state.ImageTargetSize
+import com.example.cameraapp.composer.state.ImplementationMode
+import com.example.cameraapp.composer.state.ScaleType
+import com.example.cameraapp.composer.state.rememberCameraState
 import kotlinx.coroutines.delay
 import androidx.camera.core.CameraSelector as CameraXSelector
 

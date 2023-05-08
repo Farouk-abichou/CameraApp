@@ -1,7 +1,7 @@
 package com.example.cameraapp.feature.camera.model
 
 import androidx.annotation.StringRes
-import com.example.cameraapp.camposer.state.CaptureMode
+import com.example.cameraapp.composer.state.CaptureMode
 import com.example.cameraapp.R
 
 enum class CameraOption(@StringRes val titleRes: Int) {

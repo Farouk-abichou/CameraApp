@@ -1,6 +1,6 @@
 package com.example.cameraapp.feature.camera.mapper
 
-import com.example.cameraapp.camposer.state.FlashMode
+import com.example.cameraapp.composer.state.FlashMode
 import com.example.cameraapp.feature.camera.model.Flash
 
 fun Flash.toFlashMode() = when (this) {

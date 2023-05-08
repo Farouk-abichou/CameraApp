@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer
+package com.example.cameraapp.composer
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect

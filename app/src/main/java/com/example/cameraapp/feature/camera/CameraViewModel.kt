@@ -8,9 +8,9 @@ import android.util.Log
 import androidx.camera.core.ImageProxy
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.cameraapp.camposer.state.CameraState
-import com.example.cameraapp.camposer.state.ImageCaptureResult
-import com.example.cameraapp.camposer.state.VideoCaptureResult
+import com.example.cameraapp.composer.state.CameraState
+import com.example.cameraapp.composer.state.ImageCaptureResult
+import com.example.cameraapp.composer.state.VideoCaptureResult
 import com.example.cameraapp.data.local.datasource.FileDataSource
 import com.example.cameraapp.data.local.datasource.UserDataSource
 import com.example.cameraapp.domain.User

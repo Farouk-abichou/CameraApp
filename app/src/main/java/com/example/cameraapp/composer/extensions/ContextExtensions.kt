@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer.extensions
+package com.example.cameraapp.composer.extensions
 
 import android.content.Context
 import android.os.Build

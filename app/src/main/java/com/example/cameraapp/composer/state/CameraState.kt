@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer.state
+package com.example.cameraapp.composer.state
 
 import android.content.ContentResolver
 import android.content.ContentValues
@@ -25,7 +25,7 @@ import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import com.example.cameraapp.camposer.extensions.compatMainExecutor
+import com.example.cameraapp.composer.extensions.compatMainExecutor
 import java.io.File
 import java.util.concurrent.Executor
 

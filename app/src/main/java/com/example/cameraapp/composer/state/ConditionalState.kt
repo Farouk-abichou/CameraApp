@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer.state
+package com.example.cameraapp.composer.state
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState

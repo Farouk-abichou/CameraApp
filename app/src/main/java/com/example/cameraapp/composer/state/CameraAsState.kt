@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer.state
+package com.example.cameraapp.composer.state
 
 import androidx.camera.core.ImageProxy
 import androidx.compose.runtime.Composable
@@ -7,7 +7,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.platform.LocalContext
-import com.example.cameraapp.camposer.CameraPreview
+import com.example.cameraapp.composer.CameraPreview
 
 
 /**

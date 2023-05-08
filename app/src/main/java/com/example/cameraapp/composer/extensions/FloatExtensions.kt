@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer.extensions
+package com.example.cameraapp.composer.extensions
 
 internal fun Float.clamped(scaleFactor: Float) = this * if (scaleFactor > 1f) {
     1.0f + (scaleFactor - 1.0f) * 2

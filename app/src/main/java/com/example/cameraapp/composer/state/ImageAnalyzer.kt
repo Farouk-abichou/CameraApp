@@ -1,9 +1,8 @@
-package com.example.cameraapp.camposer.state
+package com.example.cameraapp.composer.state
 
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.ImageProxy
 import androidx.compose.runtime.Immutable
-import com.example.cameraapp.camposer.state.CameraState
 
 /**
  * Intermediate Image analyzer from cameraX

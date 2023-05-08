@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer.extensions
+package com.example.cameraapp.composer.extensions
 
 import android.annotation.SuppressLint
 import android.view.MotionEvent
@@ -6,7 +6,7 @@ import android.view.ScaleGestureDetector
 import android.view.ViewConfiguration.getLongPressTimeout
 import androidx.camera.view.PreviewView
 import androidx.compose.ui.geometry.Offset
-import com.example.cameraapp.camposer.state.PinchToZoomGesture
+import com.example.cameraapp.composer.state.PinchToZoomGesture
 
 @SuppressLint("ClickableViewAccessibility")
 internal fun PreviewView.onCameraTouchEvent(

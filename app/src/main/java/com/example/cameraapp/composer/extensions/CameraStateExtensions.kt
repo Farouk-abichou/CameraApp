@@ -1,13 +1,13 @@
-package com.example.cameraapp.camposer.extensions
+package com.example.cameraapp.composer.extensions
 
 import android.content.ContentValues
 import android.net.Uri
 import android.provider.MediaStore
 import androidx.camera.core.ImageCapture
 import androidx.camera.view.video.OutputFileOptions
-import com.example.cameraapp.camposer.state.CameraState
-import com.example.cameraapp.camposer.state.ImageCaptureResult
-import com.example.cameraapp.camposer.state.VideoCaptureResult
+import com.example.cameraapp.composer.state.CameraState
+import com.example.cameraapp.composer.state.ImageCaptureResult
+import com.example.cameraapp.composer.state.VideoCaptureResult
 import kotlinx.coroutines.suspendCancellableCoroutine
 import java.io.File
 import kotlin.coroutines.Continuation

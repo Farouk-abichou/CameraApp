@@ -46,6 +46,6 @@ class FileDataSource {
     companion object {
         private const val JPEG_MIME_TYPE = "image/jpeg"
         private const val VIDEO_MIME_TYPE = "video/mp4"
-        private const val RELATIVE_PATH = "Camposer"
+        private const val RELATIVE_PATH = "Composer"
     }
 }

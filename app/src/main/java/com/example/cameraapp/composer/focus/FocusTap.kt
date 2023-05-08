@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer.focus
+package com.example.cameraapp.composer.focus
 
 import androidx.compose.animation.core.AnimationSpec
 import androidx.compose.animation.core.LinearOutSlowInEasing

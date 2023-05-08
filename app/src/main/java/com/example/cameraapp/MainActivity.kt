@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setContent {
-            CamposerTheme {
+            ComposerTheme {
                 AppPermission {
                     val navHost = rememberNavController()
                     NavGraph(navHost)

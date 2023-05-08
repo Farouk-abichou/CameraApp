@@ -20,7 +20,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.cameraapp.CamposerTheme
+import com.example.cameraapp.ComposerTheme
 import kotlinx.coroutines.delay
 
 @Composable
@@ -68,7 +68,7 @@ fun QrCodeBox(modifier: Modifier = Modifier, qrCodeText: String?) {
 @Preview
 @Composable
 private fun PreviewQrCodeBox() {
-    CamposerTheme {
+    ComposerTheme {
         QrCodeBox(qrCodeText = "#UJI")
     }
 }
@@ -76,7 +76,7 @@ private fun PreviewQrCodeBox() {
 @Preview
 @Composable
 private fun PreviewFullQrCodeBox() {
-    CamposerTheme {
+    ComposerTheme {
         QrCodeBox(qrCodeText = "https://www.google.com")
     }
 }

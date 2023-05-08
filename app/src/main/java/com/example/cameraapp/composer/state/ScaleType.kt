@@ -1,4 +1,4 @@
-package com.example.cameraapp.camposer.state
+package com.example.cameraapp.composer.state
 
 import androidx.camera.view.PreviewView.ScaleType as CameraScaleType
 
