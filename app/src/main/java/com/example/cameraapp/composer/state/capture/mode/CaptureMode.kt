@@ -1,4 +1,4 @@
-package com.example.cameraapp.composer.state
+package com.example.cameraapp.composer.state.capture.mode
 
 import androidx.annotation.OptIn
 import androidx.camera.view.CameraController.IMAGE_CAPTURE

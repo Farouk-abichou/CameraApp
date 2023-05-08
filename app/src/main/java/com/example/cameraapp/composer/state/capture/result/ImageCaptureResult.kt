@@ -1,4 +1,4 @@
-package com.example.cameraapp.composer.state
+package com.example.cameraapp.composer.state.capture.result
 
 import android.net.Uri
 import androidx.compose.runtime.Immutable

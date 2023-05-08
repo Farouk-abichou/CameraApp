@@ -22,11 +22,11 @@ import com.example.cameraapp.composer.focus.FocusTap
 import com.example.cameraapp.composer.focus.SquareCornerFocus
 import com.example.cameraapp.composer.state.CamSelector
 import com.example.cameraapp.composer.state.CameraState
-import com.example.cameraapp.composer.state.CaptureMode
-import com.example.cameraapp.composer.state.FlashMode
+import com.example.cameraapp.composer.state.capture.mode.CaptureMode
+import com.example.cameraapp.composer.state.capture.mode.FlashMode
 import com.example.cameraapp.composer.state.ImageAnalyzer
 import com.example.cameraapp.composer.state.ImageTargetSize
-import com.example.cameraapp.composer.state.ImplementationMode
+import com.example.cameraapp.composer.state.capture.mode.ImplementationMode
 import com.example.cameraapp.composer.state.ScaleType
 import com.example.cameraapp.composer.state.rememberCameraState
 import kotlinx.coroutines.delay
