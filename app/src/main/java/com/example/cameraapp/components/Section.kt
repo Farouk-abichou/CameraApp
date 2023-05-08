@@ -27,7 +27,6 @@ fun Section(
         modifier = modifier,
         topBar = {
             TopAppBar(
-//                colors = (Color.White),
                 title = { title() },
                 navigationIcon = {
                     NavigationIcon(
