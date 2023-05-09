@@ -34,7 +34,7 @@ import com.example.cameraapp.composer.state.capture.result.VideoCaptureResult
 import java.io.File
 import java.util.concurrent.Executor
 
-/**
+@ExperimentalVideo /**
  * A state object that can be hoisted to control camera, take picture or record video.
  *
  * To be created use [rememberCameraState].
@@ -295,8 +295,9 @@ public class CameraState internal constructor(context: Context) {
     ) {
         takePicture(
             outputFileOptions = ImageCapture.OutputFileOptions.Builder(
-                contentResolver, saveCollection, contentValues
-            ).build(), onResult = onResult
+                    contentResolver, saveCollection, contentValues
+            ).build(),
+            onResult = onResult
         )
     }
 
@@ -306,9 +307,13 @@ public class CameraState internal constructor(context: Context) {
      * @param onResult Callback called when [ImageCaptureResult] is ready
      * */
     public fun takePicture(
-        file: File, onResult: (ImageCaptureResult) -> Unit
+        file: File,
+        onResult: (ImageCaptureResult) -> Unit
     ) {
-        takePicture(ImageCapture.OutputFileOptions.Builder(file).build(), onResult)
+        takePicture(
+            ImageCapture.OutputFileOptions.Builder(file).build(),
+            onResult
+        )
     }
 
     /**

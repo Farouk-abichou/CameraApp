@@ -9,4 +9,5 @@ internal class PinchToZoomGesture(
         onZoomChanged(detector.scaleFactor)
         return true
     }
+
 }
