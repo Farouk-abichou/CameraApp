@@ -44,6 +44,7 @@ import java.io.File
 fun PreviewScreen(
     viewModel: PreviewViewModel = koinViewModel(),
     onBackPressed: () -> Unit,
+    onEditPressed: (String) -> Unit,
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val intentSenderLauncher = rememberLauncherForActivityResult(
@@ -71,7 +72,8 @@ fun PreviewScreen(
                 onBackPressed = onBackPressed,
                 onDeleteClick = {
                     viewModel.deleteFile(context, intentSenderLauncher, result.file)
-                }
+                },
+                onEditPressed = onEditPressed
             )
         }
 
@@ -85,6 +87,7 @@ fun PreviewScreen(
 fun PreviewTopAppBar(
     onBackPressed: () -> Unit,
     onDeleteClick: () -> Unit,
+    onEditPressed: (String) -> Unit,
 ) {
     Row(
         modifier = Modifier
@@ -99,13 +102,23 @@ fun PreviewTopAppBar(
             contentDescription = stringResource(R.string.back),
             onClick = onBackPressed
         )
-        NavigationIcon(
-            modifier = Modifier
-                .background(Color.Black.copy(alpha = 0.1F), CircleShape),
-            icon = Icons.Filled.Delete,
-            contentDescription = stringResource(R.string.delete),
-            onClick = onDeleteClick
-        )
+        Row {
+            NavigationIcon(
+                modifier = Modifier
+                    .background(Color.Black.copy(alpha = 0.1F), CircleShape),
+                icon = Icons.Filled.Delete,
+                contentDescription = stringResource(R.string.delete),
+                onClick = { onEditPressed }
+            )
+
+            NavigationIcon(
+                modifier = Modifier
+                    .background(Color.Black.copy(alpha = 0.1F), CircleShape),
+                icon = Icons.Filled.Delete,
+                contentDescription = stringResource(R.string.delete),
+                onClick = onDeleteClick
+            )
+        }
     }
 }
 

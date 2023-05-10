@@ -39,6 +39,7 @@ import coil.compose.AsyncImagePainter
 import coil.decode.VideoFrameDecoder
 import coil.request.ImageRequest
 import coil.request.videoFramePercent
+import com.google.android.exoplayer2.MediaItem
 import org.koin.androidx.compose.get
 import java.io.File
 
@@ -56,7 +57,14 @@ fun GalleryScreen(
     ) {
         Box(Modifier.padding(it)) {
             val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-            when (val result: GalleryUiState = uiState) {
+
+            when (
+                val result: GalleryUiState = uiState
+
+            ) {
+
+
+
                 GalleryUiState.Initial -> GalleryLoading()
                 GalleryUiState.Empty -> GalleryEmpty()
                 is GalleryUiState.Success -> GallerySection(

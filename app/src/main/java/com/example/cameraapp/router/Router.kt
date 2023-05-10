@@ -9,4 +9,8 @@ sealed class Router(val route: String) {
     object Preview : Router("preview/{${Args.Path}}") {
         fun createRoute(path: String) = "preview/${Uri.encode(path)}"
     }
+    object Edit : Router("edit/{${Args.Path}}") {
+        fun createRoute(path: String) = "edit/${Uri.encode(path)}"
+    }
+
 }

@@ -3,6 +3,7 @@ package com.example.cameraapp.feature.gallery
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.cameraapp.data.local.datasource.FileDataSource
+import com.google.android.exoplayer2.MediaItem
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -21,6 +22,9 @@ class GalleryViewModel(fileDataSource: FileDataSource) : ViewModel() {
         initialValue = GalleryUiState.Initial
     )
     val uiState: StateFlow<GalleryUiState> get() = _uiState
+
+
+
 }
 
 sealed interface GalleryUiState {

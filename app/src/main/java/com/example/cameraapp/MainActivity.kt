@@ -12,6 +12,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.cameraapp.feature.camera.CameraScreen
 import com.example.cameraapp.feature.configuration.ConfigurationScreen
+import com.example.cameraapp.feature.edit.EditScreen
 import com.example.cameraapp.feature.gallery.GalleryScreen
 import com.example.cameraapp.feature.permission.AppPermission
 import com.example.cameraapp.feature.preview.PreviewScreen
@@ -59,7 +60,20 @@ class MainActivity : ComponentActivity() {
                     navArgument(Args.Path) { type = NavType.StringType },
                 )
             ) {
-                PreviewScreen(onBackPressed = { navHost.navigateUp() })
+                PreviewScreen(
+                    onBackPressed = { navHost.navigateUp() },
+                    onEditPressed = { navHost.navigate(Router.Preview.createRoute(it))}
+                )
+            }
+            route(
+                route = Router.Edit,
+                arguments = listOf(
+                    navArgument(Args.Path) { type = NavType.StringType },
+                )
+            ) {
+                EditScreen (
+                    onBackPressed = { navHost.navigateUp() }
+                )
             }
         }
     }
