@@ -62,7 +62,6 @@ class MainActivity : ComponentActivity() {
             ) {
                 PreviewScreen(
                     onBackPressed = { navHost.navigateUp() },
-                    onEditPressed = { navHost.navigate(Router.Preview.createRoute(it))}
                 )
             }
             route(

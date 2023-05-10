@@ -14,6 +14,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -44,7 +45,6 @@ import java.io.File
 fun PreviewScreen(
     viewModel: PreviewViewModel = koinViewModel(),
     onBackPressed: () -> Unit,
-    onEditPressed: (String) -> Unit,
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val intentSenderLauncher = rememberLauncherForActivityResult(
@@ -73,7 +73,9 @@ fun PreviewScreen(
                 onDeleteClick = {
                     viewModel.deleteFile(context, intentSenderLauncher, result.file)
                 },
-                onEditPressed = onEditPressed
+                onEditPressed = {
+
+                }
             )
         }
 
@@ -87,7 +89,7 @@ fun PreviewScreen(
 fun PreviewTopAppBar(
     onBackPressed: () -> Unit,
     onDeleteClick: () -> Unit,
-    onEditPressed: (String) -> Unit,
+    onEditPressed: () -> Unit,
 ) {
     Row(
         modifier = Modifier
@@ -106,9 +108,9 @@ fun PreviewTopAppBar(
             NavigationIcon(
                 modifier = Modifier
                     .background(Color.Black.copy(alpha = 0.1F), CircleShape),
-                icon = Icons.Filled.Delete,
-                contentDescription = stringResource(R.string.delete),
-                onClick = { onEditPressed }
+                icon = Icons.Filled.Edit,
+                contentDescription = "edit",
+                onClick = onEditPressed
             )
 
             NavigationIcon(
@@ -123,7 +125,7 @@ fun PreviewTopAppBar(
 }
 
 @Composable
-private fun PreviewVideoSection(file: File) {
+fun PreviewVideoSection(file: File) {
     val context = LocalContext.current
     val lifecycle by LocalLifecycleOwner.current.lifecycle.observeAsState()
     val player = remember {
@@ -156,7 +158,7 @@ private fun PreviewVideoSection(file: File) {
 }
 
 @Composable
-private fun PreviewImageSection(file: File) {
+fun PreviewImageSection(file: File) {
     AsyncImage(
         modifier = Modifier.fillMaxSize(),
         model = file,
