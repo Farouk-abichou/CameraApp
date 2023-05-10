@@ -4,7 +4,6 @@ import android.net.Uri
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.media3.common.MediaItem
 import com.example.cameraapp.extensions.isVideo
 import com.example.cameraapp.feature.preview.PreviewUiState
 import com.example.cameraapp.router.Args
