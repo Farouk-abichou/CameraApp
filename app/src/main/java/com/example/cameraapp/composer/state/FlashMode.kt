@@ -1,4 +1,4 @@
-package com.example.cameraapp.composer.state.capture.mode
+package com.example.cameraapp.composer.state
 
 import androidx.camera.core.ImageCapture
 

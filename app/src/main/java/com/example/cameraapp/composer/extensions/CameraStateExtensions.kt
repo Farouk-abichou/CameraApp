@@ -6,8 +6,8 @@ import android.provider.MediaStore
 import androidx.camera.core.ImageCapture
 import androidx.camera.view.video.OutputFileOptions
 import com.example.cameraapp.composer.state.CameraState
-import com.example.cameraapp.composer.state.capture.result.ImageCaptureResult
-import com.example.cameraapp.composer.state.capture.result.VideoCaptureResult
+import com.example.cameraapp.composer.state.ImageCaptureResult
+import com.example.cameraapp.composer.state.VideoCaptureResult
 import kotlinx.coroutines.suspendCancellableCoroutine
 import java.io.File
 import kotlin.coroutines.Continuation
