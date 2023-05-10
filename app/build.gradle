@@ -85,7 +85,7 @@ dependencies {
 
     //zxing
     implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
-    
+
     //Accompanist
     implementation 'com.google.accompanist:accompanist-permissions:0.25.1'
 
