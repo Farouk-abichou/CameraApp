@@ -26,18 +26,6 @@ fun ActionBox(
     onRecording: () -> Unit,
     onCameraOptionChanged: (CameraOption) -> Unit,
 ) {
-    var color = remember { mutableStateOf(Color.Red) }
-    Text(
-        "SRDGSE",
-        color = color.value
-    )
-    Button(
-        onClick = {
-            color.value = Color.Gray
-        }
-    ){
-
-    }
     Column(
         modifier = modifier,
     ) {
